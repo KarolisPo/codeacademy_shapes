@@ -1,0 +1,25 @@
+.link-wrap {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.mylink {
+  border: 3px solid gray;
+  margin: 10px 0 10px 0;
+  padding: 20px 60px;
+  border-radius: 10px;
+  background-color: springgreen;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.mylink:hover {
+  background-color: gray;
+  border-color: springgreen;
+}
