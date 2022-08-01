@@ -1,19 +1,3 @@
-const clearBtn = document.getElementById("clear");
-const multiplyBtn = document.getElementById("multiply");
-const modBtn = document.getElementById("mod");
-const divideBtn = document.getElementById("divide");
-const sumBtn = document.getElementById("sum");
-const minusBtn = document.getElementById("minus");
-const numOne = document.getElementById("1");
-const numTwo = document.getElementById("2");
-const numThree = document.getElementById("3");
-const numFour = document.getElementById("4");
-const numFive = document.getElementById("5");
-const numSix = document.getElementById("6");
-const numSeven = document.getElementById("7");
-const numEight = document.getElementById("8");
-const numNine = document.getElementById("9");
-const numZero = document.getElementById("0");
 
 let answer = document.getElementById("answer");
 
