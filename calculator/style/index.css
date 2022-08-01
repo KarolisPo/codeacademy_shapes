@@ -1,0 +1,32 @@
+.calc-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 3px;
+}
+
+.answer-wrap {
+  height: 50px;
+  border: 2px solid black;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.buttons-wraper {
+  display: flex;
+  gap: 3px;
+}
+
+.buttons-wraper button {
+  flex: 1;
+}
+
+.buttons__line1 button:first-child,
+.buttons__line5 button:first-child {
+  flex: 2.15;
+}
