@@ -3,6 +3,9 @@
   font-weight: 400;
 }
 
+body {
+  background-color: #f3f3f0;
+}
 main {
   height: 100vh;
 }
@@ -72,6 +75,9 @@ button {
   font-size: 25px;
 }
 
+button:active {
+  background-color: #555555;
+}
 #equal {
   background-color: #fc6a03;
 }
