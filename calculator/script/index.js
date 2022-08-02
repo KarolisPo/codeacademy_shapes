@@ -1,4 +1,3 @@
-
 let answer = document.getElementById("answer");
 
 const buttonArray = document.getElementsByTagName("button");
@@ -14,6 +13,9 @@ for (let i = 0; i < buttonArray.length; i++) {
     buttonArray[i].id === "dot"
   ) {
     buttonArray[i].addEventListener("click", function () {
+      if (answer.innerHTML === "0") {
+        answer.innerHTML = "";
+      }
       answer.innerHTML = answer.innerHTML + buttonArray[i].innerHTML;
     });
   } else {
@@ -21,7 +23,7 @@ for (let i = 0; i < buttonArray.length; i++) {
       function saveData() {
         firstNumber = parseFloat(answer.innerHTML);
         action = buttonArray[i].id;
-        answer.innerHTML = "";
+        answer.innerHTML = "0";
       }
 
       switch (buttonArray[i].id) {
@@ -41,7 +43,9 @@ for (let i = 0; i < buttonArray.length; i++) {
           saveData();
           break;
         case "clear":
-          saveData();
+          firstNumber = 0;
+          secondNumber = 0;
+          answer.innerHTML = "0";
           break;
         case "equal":
           if (answer.innerHTML) {
@@ -78,4 +82,3 @@ for (let i = 0; i < buttonArray.length; i++) {
     });
   }
 }
-
